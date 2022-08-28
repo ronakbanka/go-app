@@ -14,7 +14,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
 // Handler for about page
 func AboutHandler(w http.ResponseWriter, r *http.Request) {
-    title, body := "About", "This is the about page."
+    title, body := "About", "This is the new about page."
     fmt.Fprintf(w, "<a href='/'>Home</a> <a href='/about/'>About</a><br><h1>%s</h1><div>%s</div>", title, body)
 }
 
